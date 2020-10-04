@@ -1,5 +1,11 @@
 # HEALTH and MEDICINES
+
 ***
+
+<img src="./logo_display.png">
+
+***
+
 With the ongoing pandemic, it's imperative that everyone remains at home and follows the correct protocols in this situation. Going outdoors should be minimized
 and done only when extremely necessary. Keeping this in mind, we decided to create an online platform for medical needs and devised a solution for the same.
 
