@@ -20,12 +20,24 @@ window.addEventListener("load" ,() => {
             })
             .then(data =>{
                 document.getElementById('title').innerHTML="Here are some nearby healthcare centres!"
-
-                //console.log("data",data);
+                 
+                console.log("data",data);
                 for (var i=0; i<data.results.length; i++){
-                let adress=data.results[i].address.streetName;
+                let name = data.results[i].poi.name;
+                let adress=data.results[i].address;
                 let category= data.results[i].poi.categories;
                 
+<<<<<<< HEAD
+                
+                //for ( i =0 ; i <category.length ; i++ ){
+                if(  category[1] =="hospital/polyclinic"){
+                    console.log(adress)
+                document.getElementById('data').innerText+=  ` Name :${name} \n Category: ${category}  \n Address: ${adress.municipality},
+                ${adress.countrySecondarySubdivision},${adress.countrySubdivision},${ adress.postalCode},${adress.countryCode}\n\n` ;
+                }
+            //}
+        }  
+=======
                 if (category[1]==='hospital/polyclinic'){
                     console.log(data);
                     console.log("data",adress);
@@ -34,6 +46,7 @@ window.addEventListener("load" ,() => {
                    
                 }
                }   
+>>>>>>> f9eeb0a13120d2f370694a081a66b6f697c12f95
 
             })
         })
